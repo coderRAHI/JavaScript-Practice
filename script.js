@@ -80,9 +80,107 @@ console.log("a is less than equal to b :", a<=b);
 
 let x = 2;
 y = 5;
+
 console.log("The Given values of 'x' And 'y' resp is:" , x , y);
+console.log("The Logical AND Operator is here both condition true then the value of AND operator is:", x < y && x === 2);
+// In the logical AND operator if both the condition is true then only the result is true otherwise it gives false.
+
+console.log("The Logical OR Operator is here both condition is true then the value of OR operator is:", x < y || x !== 2);
+// In logical Or operator if the both codition is false then only the result is false otherwise the results is true in each case.
+
+console.log("The Logical NOT Operator which can change the result means if the original result is true then it make it false :", !(x < y) );
+// The Logical NOT operator makes the original result opposite , means if the original result is true then the NOT operator makes it false and its vice versa .
 
 
+// Assignment operators 
+
+let p = 3;
+ q = 10 ; 
+ r = 2;
+console.log("the given two numbers p , q and r are respectively :" , p , q , r);
+console.log("Assignment operator q += 5 means q = q + 5  is :", q += 5);
+console.log("Assignment operator p -= 2 means p = p - 2  is :", p -= 2);
+console.log("Assignment operator r *= 5 means r = r * 5  is :", r *= 5);
+console.log("Assignment operator q /= 5 means q = q / 5  is :", q /= 2);
+console.log("Assignment operator q %= 5 means q = q % 5  is :", q %= 5);
+console.log("Assignment operator r **= 5 means r = r ** 5  is :", r **= 5);
 
 
+// Topic 4th CONDITIONAL STATEMENTS 
+
+// 1. if Statement
+   
+let age = 20 ; 
+if(age >= 18){
+    console.log("You are Adult because your age is : ", age)
+}
+
+
+// 2. if-else statement
+
+let Age = 16 ;
+ if(Age >= 18){
+    console.log("You Are eligible for vote because your age is :", Age);
+ }
+ else{
+    console.log("You Are Not eligible for vote because your age is :", Age);
+ }
+ 
+
+// 3. if-else-if statements
+
+let mode = "dark" ;
+let color ;
+
+if(mode === "dark"){
+    color = "black";
+   
+}else if(mode === "light"){
+    color = "white";
+}else{
+    color = "Mode of Screen is Not defined."
+}
+
+console.log("color of screen is :",color);
+
+// 4. Switch Case 
+
+let dayNumber = 7; // maan lo 1 = Monday, 2 = Tuesday, etc.
+
+switch (dayNumber) {
+  case 1:
+    console.log(" 1st day of week is Monday");
+    break;
+  case 2:
+    console.log(" 2nd day of week is Tuesday");
+    break;
+  case 3:
+    console.log("3rd day of week is Wednesday");
+    break;
+  case 4:
+    console.log("4th day of week is Thursday");
+    break;
+  case 5:
+    console.log("5th day of week is Friday");
+    break;
+  case 6:
+    console.log("6th day of week is Saturday");
+    break;
+  case 7:
+    console.log("7th day of week is Sunday");
+    break;
+  default:
+    console.log("Invalid day number!");
+}
+
+
+ //    OR second method by taking input value with the help of prompt.
+
+let AGE = prompt("Enter Your Age");
+if(AGE >= 18){
+     console.log("You Are eligible for vote because your age is :", AGE);
+}   
+else{
+    console.log("You Are Not eligible for vote because your age is :", AGE);
+}             
 
