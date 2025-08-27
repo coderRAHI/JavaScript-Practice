@@ -190,17 +190,14 @@ switch (dayNumber) {
 let name = "Himanshu";
 console.log("My Name Is:", name);
 
-
 // Problem 2. Create a variable DOB and print your DOB after assign your DOB in years value in it .
 let DOB = 21;
 console.log("Your Age is :", DOB);
-
 
 // problem 3. Declare two variables firstName and lastName, store your name, and print full name.
 let firstName = "Himanshu";
 let lastName = "Gangwar";
 console.log("Your Full Name is:", firstName, lastName);
-
 
 // problem 4. Declare three variables for marks of subjects and print their total.
 let numb1 = 75;
@@ -209,17 +206,14 @@ let numb3 = 90;
 let total = numb1 + numb2 + numb3;
 console.log("Total marks of three subjects are:", total);
 
-
 // problem 5. Store city and country in variables, print "I live in Delhi, India".
 let city = "Delhi";
 let country = "India";
 console.log("I Live in", city, ",", country);
 
-
 // problem 6. Declare a variable for your favorite color and print a message with it.
 let favColor = "pink";
 console.log("MY FAVORITE COLOR IS :", favColor);
-
 
 // problem 7. Store a product name , price and discount in variables, print "the details of the product" and "The price of product is ₹X".
 let product = {
@@ -230,22 +224,20 @@ let product = {
 console.log("The Details of the products is :", product);
 console.log("The price of the product is in Rs :", product["price"]);
 
-
 // problem 8. Store temperature in Celsius in a variable and print it.
-let temperature = 98.4 ;
-console.log("The temperture in celcius is:",temperature);
+let temperature = 98.4;
+console.log("The temperture in celcius is:", temperature);
 
 // problem 9. declare the variable name book and give the details like name , price , isAvailable , discount and for standard.
 let book = {
-  name : 'Science',
-  price : 249,
-  isAvailable : true,
-  discount : 20,
-  standard : 'B.Sc'
+  name: "Science",
+  price: 249,
+  isAvailable: true,
+  discount: 20,
+  standard: "B.Sc",
 };
-console.log("The details of the book are as follow :",book);
-console.log("The standard of book in which it is used :",book['standard']);
-
+console.log("The details of the book are as follow :", book);
+console.log("The standard of book in which it is used :", book["standard"]);
 
 // problem 10. Swap the values of two variables and print before/after.
 let f = 10;
@@ -258,3 +250,73 @@ f = g;
 g = temp;
 
 console.log("After Swap: f =", f, " g =", g);
+
+// problem 11. Declare a string, number, boolean, and print their types using typeof.
+
+let str = "HIMANSHU GANGWAR";
+let theNumber = 8941889048;
+let boolean = true;
+
+console.log("String is :", str);
+console.log(typeof str);
+
+console.log("Number is :", theNumber);
+console.log(typeof theNumber);
+
+console.log("Boolean is :", boolean);
+console.log(typeof boolean);
+
+// problem 12. Store null in a variable and print its type.
+
+let myVariable = null;
+console.log("The variable is :", myVariable);
+console.log(typeof myVariable);
+
+// problem 13. Create an object with keys name, age, city and print one property.
+let object = {
+  name: "Himanshu Gangwar",
+  age: 21,
+  city: "Bareilly",
+};
+console.log("The name of the one key of an Object is :", object["name"]);
+console.log("The age of the one key of an Object is :", object["age"]);
+console.log("The city of the one key of an Object is :", object["city"]);
+console.log("The  Object is :", object);
+
+// problem 14. Store a boolean value (true/false) and print a message depending on it .
+let isBareilly = true;
+let isPatna = false;
+console.log("Is Bareilly are in U.P ? \n", isBareilly);
+console.log("Is Patna are in U.P ? \n", isPatna);
+
+// problem 15. Add two payments using + operator.
+let payment1 = 1000;
+let payment2 = 4000;
+let totalPayment = payment1 + payment2;
+console.log("the total paymemts is : ", totalPayment);
+
+// problem 16. Divide 10 by 3 and print the remainder using %.
+let R = 10;
+console.log("When", R, "is divided by 3 then the remainder is : ", R % 3);
+
+// problem 17. Use ++ operator to increase a variable’s value and Use -- operator to decrease a variable’s value.
+
+let value = 4;
+console.log("the increased value of the given value is :", ++value);
+console.log("the decreased value of the given value is :", --value);
+
+//  problem 18. Compare values of number with > and print the result.
+let value1 = 6;
+let value2 = 8;
+console.log("Is", value1, "greater than", value2, "?", value1 > value2);
+
+// problem 19. Use logical && to check if two conditions are true.
+let value3 = 20;
+let value4 = 12;
+console.log ("the given is make satisfy the logical && .", value3 > value4 && value3 >= value4);
+
+// problem 20. Use logical || to check if at least one condition is true.
+let value5 = 20;
+let value6 = 12;
+console.log ("the given is make satisfy the logical || .", value5 > value6 || value5 <= value6);
+
